@@ -1,0 +1,18 @@
+{
+  "name": "ts-pick-partial-comparison",
+  "version": "1.0.0",
+  "main": "./lib/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^5.2.2"
+  },
+  "files": [
+    "./bin/*",
+    "./lib/*"
+  ],
+  "typings": "./lib/index.d.ts",
+  "scripts": {
+    "compile-native": "tsc -p nativePickPartial/tsconfig.json --noEmit --incremental false --extendedDiagnostics",
+    "compile-mapped": "tsc -p manualMappedTypes/tsconfig.json --noEmit --incremental false --extendedDiagnostics"
+  }
+}
